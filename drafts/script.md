@@ -1,0 +1,12 @@
+- Introductions
+- Provide grammars to define the arithmetic expression language
+- Explain one-step evaluation
+- Explain how one-step evaluation differs from big-step evaluation
+- Provide some inference rules to work through a basic arithmetic example (such as simple addition)
+    - Explain how each rule is used and how the placement of the substitution affects the order of operations
+- Begin our division example
+    - We will need two do rules and two search rules
+    - Explain how do rules differ from search rules
+    - Explain short-circuiting and how the do rules enforce it
+    - Explain how the search rules can enforce order of operations
+    - Explain how the search rules can enforce associativity

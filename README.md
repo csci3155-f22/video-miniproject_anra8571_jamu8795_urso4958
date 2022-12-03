@@ -3,14 +3,20 @@
 
 See [instructions.md](instructions.md) for submission instructions.
 
-# TODO: Replace this with Your Project Title
+# TODO: Small-Step Substitution
 
 ## Description
 
-TOD: Replace this with at least a few paragraphs describing your project.
+Project Team: Jason Mu, Anna Rahn, Uri Soltz
+
+During class, we used small-step substitution to determine evaluation order of arithmetic expressions and to implement short circuiting. In our video tutorial, we will give a brief review of the requisite logic and inference rule structure before providing a complete walkthrough of an exam-like example question.
+
+Our example question is as follows: "Write a set of inference rules such that the evaluation of e1 / e2 short-circuits if e2 is zero." Such an expression always produces an invalid result, so by short-circuiting, we can improve the efficiency of the evaluation. We will then translate these inference rules into Scala code.
 ## Repository Organization
 
-TODO: Replace this with a description of the organization of your repository.
+The video tutorial will be linked below under the Presentation section of the readme. Viewers can follow along using the materials in the presentation_materials folder.
+
+For the checkpoint, the drafts of both our materials and script can be found in the drafts folder.
 
 ## Building and Testing Instructions
 
@@ -21,6 +27,6 @@ TODO: Replace with building and testing instructions. Please minimize the number
 TODO: Update the following links and remove this line.
 
 - YouTube: https://youtu.be/TODO.
-- Script: [script.md](script.md) or [script.pdf](script.pdf).
+- Script: [script.md](script.md).
 - Recording: [recording.mp4](recording.mp4).
 - Slides (if you use them in your recording): [slides.pdf](slides.pdf) and slide sources (e.g., [slides.pptx](slides.pptx) or [slides.key](slides.key)).
