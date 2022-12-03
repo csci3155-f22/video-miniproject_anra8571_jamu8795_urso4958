@@ -10,3 +10,4 @@
     - Explain short-circuiting and how the do rules enforce it
     - Explain how the search rules can enforce order of operations
     - Explain how the search rules can enforce associativity
+- Explain how to translate the short-circuiting division rules into Scala code

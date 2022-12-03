@@ -11,7 +11,10 @@ Project Team: Jason Mu, Anna Rahn, Uri Soltz
 
 During class, we used small-step substitution to determine evaluation order of arithmetic expressions and to implement short circuiting. In our video tutorial, we will give a brief review of the requisite logic and inference rule structure before providing a complete walkthrough of an exam-like example question.
 
-Our example question is as follows: "Write a set of inference rules such that the evaluation of e1 / e2 short-circuits if e2 is zero." Such an expression always produces an invalid result, so by short-circuiting, we can improve the efficiency of the evaluation. We will then translate these inference rules into Scala code.
+First, we will explain small-step evaluation using addition. We will write three rules: one do rule and two search rules. We explain the differences between the rule types, then walk through an example. This example can be found in drafts/Materials.pdf and will illustrate how to enforce order of operations.
+
+Our exam question is as follows: "Write a set of inference rules such that the evaluation of e1 / e2 short-circuits if e2 is zero." Such an expression always produces an invalid result, so by short-circuiting, we can improve the efficiency of the evaluation. The grammars for the expression language, example, and final inference rules can be found in drafts/Materials.pdf. We will explain the thought process behind writing the inference rules, how to enforce associativity and order of operations, and how to implement short-circuiting. After this, we will translate these inference rules into Scala code.
+
 ## Repository Organization
 
 The video tutorial will be linked below under the Presentation section of the readme. Viewers can follow along using the materials in the presentation_materials folder.
