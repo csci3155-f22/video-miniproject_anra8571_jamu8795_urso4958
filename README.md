@@ -29,7 +29,7 @@ TODO: Replace with building and testing instructions. Please minimize the number
 
 TODO: Update the following links and remove this line.
 
-- YouTube: https://youtu.be/TODO.
+- YouTube: https://www.youtube.com/watch?v=Wdck-WmsthI&ab_channel=UriSoltz.
 - Script: [script.md](script.md).
 - Recording: [recording.mp4](recording.mp4).
 - Slides (if you use them in your recording): [slides.pdf](slides.pdf) and slide sources (e.g., [slides.pptx](slides.pptx) or [slides.key](slides.key)).
