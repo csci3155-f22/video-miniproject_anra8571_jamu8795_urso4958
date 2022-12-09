@@ -23,11 +23,13 @@ For the checkpoint, the drafts of both our materials and script can be found in 
 
 ## Building and Testing Instructions
 
-Download the worksheet from production/short_circuit.worksheet.sc. Move the file from your Downloads directory to your lab3/src/main/scala/jsy/student directory. Start Metals, then run the worksheet. Once everything compiles and evaluates, you can experiment with the code, write test examples, add to the grammar defining the expression language, and more!
+Download the worksheet from production/short_circuit.worksheet.sc. Move the file from your Downloads directory to your lab3/src/main/scala/jsy/student directory. Start Metals, then run the worksheet. Once everything compiles and evaluates, you can experiment with the code, write tests and examples, expand the grammar to include multiplication, and more!
 
 ## Contributions
 Anna Rahn: Wrote the examples, solutions, and code example, then did the audio/visual explanation of each, created thumbnail
+
 Uri Soltz: Recorded and directed video, edited video and audio, created credits outro
+
 Jason Mu: Recorded video, proofread all presentation materials
 
 ## Presentation
