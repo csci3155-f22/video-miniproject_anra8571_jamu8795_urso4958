@@ -17,24 +17,24 @@ def step(e: Expr): Expr = {
         case Binary(Div, N(n1), N(n2)) if (n2 != 0) => {
             val np = n1 / n2
             N(np)
-      }
+        }
 
-      // DoDiv2
-      case Binary(Div, _, N(n2)) if (n2 == 0) => {
-            Undefined
-      }
+        // DoDiv2
+        case Binary(Div, _, N(n2)) if (n2 == 0) => {
+                Undefined
+        }
 
-      // SearchDiv
-      case Binary(Div, e1, N(n2)) if (n2 != 0)=> {
-        val e1p = step(e1)
-        step(Binary(Div, e1p, N(n2)))
-        } 
+        // SearchDiv
+        case Binary(Div, e1, N(n2)) if (n2 != 0)=> {
+            val e1p = step(e1)
+            step(Binary(Div, e1p, N(n2)))
+            } 
 
-      // SearchDiv
-      case Binary(Div, e1, e2) => {
-        val e2p = step(e2)
-        step(Binary(Div, e1, e2p))
-      }
-    }
+        // SearchDiv
+        case Binary(Div, e1, e2) => {
+            val e2p = step(e2)
+            step(Binary(Div, e1, e2p))
+        }
+     }
 
 }
