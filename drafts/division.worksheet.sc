@@ -1,19 +1,40 @@
-// TODO: get classes working right
-def eval(e: Expr): Int = e match {
-    // if just a number, no operations necessary
-    case N(n) => N
+ import  jsy.lab3.Parser 
+// Imports the parse function from jsy.lab1.Parser
+import jsy.lab3.Parser.parse
 
-    case Binary(uop, e1, e2) => uop match {
-        // according to the grammar, the subexpressions may be sums or differences
-        case Plus => eval(e1) + eval(e2)
-        case Minus => eval(e1) - eval(e2)
+// Imports the ast nodes
+import jsy.lab3.ast._
 
-        case Div => 
-            // evaluate n2 first, always
-            val n2 = eval(e2)
-            // SearchDiv: If n2 is not zero, then start evaluating e1
-            if (n2 != 0) eval(e1)/n2
-            // If n2 is zero, return Undefined
-            else Undefined
+// Imports all of the functions form jsy.student.Lab2 (your implementations in Lab2.scala)
+import jsy.student.Lab3._
+import jsy.lab3.Lab3Like
+
+def step(e: Expr): Expr = {
+    e match {
+        case N(n) => N(n)
+
+        // DoDiv
+        case Binary(Div, N(n1), N(n2)) if (n2 != 0) => {
+            val np = n1 / n2
+            N(np)
+      }
+
+      // DoDiv2
+      case Binary(Div, _, N(n2)) if (n2 == 0) => {
+            Undefined
+      }
+
+      // SearchDiv
+      case Binary(Div, e1, N(n2)) if (n2 != 0)=> {
+        val e1p = step(e1)
+        step(Binary(Div, e1p, N(n2)))
+        } 
+
+      // SearchDiv
+      case Binary(Div, e1, e2) => {
+        val e2p = step(e2)
+        step(Binary(Div, e1, e2p))
+      }
     }
+
 }
