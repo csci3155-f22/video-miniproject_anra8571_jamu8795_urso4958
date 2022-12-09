@@ -33,8 +33,7 @@ Uri Soltz: Recorded and directed video, edited video and audio, created credits 
 Jason Mu: Recorded video, proofread all presentation materials
 
 ## Presentation
-
-TODO: Update the following links and remove this line.
-
 - YouTube: https://www.youtube.com/watch?v=Wdck-WmsthI&ab_channel=UriSoltz.
 - Script: [script.md](https://github.com/csci3155-f22/video-miniproject_anra8571_jamu8795_urso4958/blob/main/drafts/script.md).
+- Inference Rule Examples: [examples](https://github.com/csci3155-f22/video-miniproject_anra8571_jamu8795_urso4958/blob/main/production/Presentation%20Materials.pdf)
+- Short-Circuiting Division Example: [division.worksheet.sc](https://github.com/csci3155-f22/video-miniproject_anra8571_jamu8795_urso4958/blob/main/production/division.worksheet.sc)
